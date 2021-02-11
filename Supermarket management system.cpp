@@ -159,6 +159,8 @@ void makebill(){
 			double bill=0;
 			for(int i=0;i<cart.size();i++)
 			{sales.push_back(cart[i]);
+			cart[i].show();
+			cout<<endl;
 			bill+=cart[i].getprice()-cart[i].getdiscount();}
 			cout<<"\nYour cart bill is: "<<bill;
 			break;
